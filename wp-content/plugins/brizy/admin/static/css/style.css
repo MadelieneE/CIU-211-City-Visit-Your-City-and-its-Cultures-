@@ -1,0 +1,302 @@
+.brizy-editor-enabled #insert-media-button,
+.brizy-editor-enabled #wp-content-editor-tools .wp-editor-tabs,
+.brizy-editor-enabled #wp-content-editor-container .quicktags-toolbar,
+.brizy-editor-enabled #wp-content-editor-container .wp-editor-area {
+    display: none;
+}
+
+#brizy-admin-enable,
+#brizy-admin-disable {
+    float: left;
+}
+
+#brizy-admin-disable,
+.brizy-editor-enabled #brizy-admin-enable {
+    display: none;
+}
+
+.brizy-editor-enabled #brizy-admin-disable {
+    display: block;
+}
+
+.brizy-editor {
+    padding: 10% 0;
+    display: none;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.brizy-editor-enabled .brizy-editor {
+    display: flex;
+}
+
+.brizy-logo {
+    max-height: 22px;
+    margin-left: 4px;
+    margin-right: 4px;
+    transform: translateY(2px);
+}
+
+.brizy-button--arrow {
+    max-height: 14px;
+    margin-right: 11px;
+}
+
+.brizy-buttons {
+    height: 40px;
+    text-align: left;
+}
+
+.brizy-buttons-gutenberg {
+    height: 300px;
+    border: 1px solid #dedede;
+    background: #f9f9f9;
+    margin-top: 10px;
+    line-height: 300px;
+    text-align: center;
+}
+
+.brizy-buttons-gutenberg .brizy-button {
+}
+
+.brizy-buttons-gutenberg .brizy-button:hover {
+}
+
+.brizy-button {
+    padding: 0px 30px 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom: 0;
+    border-radius: 3px;
+    background-color: #d62c64;
+    box-shadow: 0px 2px 0px 0px #981e46;
+    text-shadow: none;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+    color: #fff !important;
+    font-style: italic;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 200ms linear;
+    height: 33px;
+}
+
+.brizy-button img {
+    background: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.brizy-button--default {
+    font-size: 15px;
+    color: #444;
+    border-color: #e5e5e5;
+    background-color: #fff;
+    box-shadow: 0px 2px 0px 0px #e3e3e3;
+}
+
+.brizy-button--primary {
+    height: 33px;
+    color: #fff !important;
+    border-color: #d62c64 !important;
+    background-color: #d62c64 !important;
+    box-shadow: 0px 2px 0px 0px #981e46 !important;
+}
+
+.brizy-button:hover,
+.brizy-button:focus,
+.brizy-button:active {
+    transform: none;
+}
+
+.brizy-button--primary:hover,
+.brizy-button--primary:focus,
+.brizy-button--primary:active {
+    color: #fff !important;;
+    background-color: #d62c64 !important;;
+    border-color: #d62c64 !important;;
+    box-shadow: 0px 2px 0px 0px #981e46 !important;;
+}
+
+.brizy-button--default:hover,
+.brizy-button--default:focus,
+.brizy-button--default:active {
+    color: #444;
+    border-color: #e5e5e5;
+    background-color: #fff;
+    box-shadow: 0px 2px 0px 0px #e3e3e3;
+}
+
+/**
+ * Style Brizy Templates
+ */
+
+.brizy-template-rules input[type="text"],
+.brizy-template-rules select {
+    vertical-align: middle;
+    height: 28px;
+    line-height: 28px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    box-shadow: none;
+}
+
+.brizy-rule-select,
+.brizy-rule-select ~ .select2-container {
+    margin-right: 5px;
+}
+
+.brizy-template-rules .rule:not(:first-of-type) {
+    margin-top: 10px;
+}
+
+.brizy-delete-rule {
+    border: 0;
+    padding: 0;
+    font-size: 13px;
+    text-decoration: underline;
+    cursor: pointer;
+    background: none;
+    color: #a00;
+}
+
+#template-rules .inside {
+    padding-bottom: 20px;
+}
+
+.brizy-rule-select > select {
+    padding-left: 8px;
+    padding-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1;
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+}
+
+.brizy-rule-select > select:disabled {
+    color: #444;
+    background-color: #eee;
+    border: 1px solid #aaa;
+}
+
+.brizy-rule-select--options {
+    min-width: 175px;
+}
+
+.brizy-rule-select {
+    position: relative;
+}
+
+.brizy-rule-select::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    height: 0;
+    width: 0;
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+}
+
+.brizy-rule-new-condition .brizy-rule-select2::after {
+    content: none;
+}
+
+.brizy-featured-image {
+
+}
+
+.brizy-featured-image .wrapper {
+    position: relative;
+}
+
+.brizy-featured-image .focal-point {
+    position: absolute;
+    z-index: 10;
+    width: 14px;
+    height: 14px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #2eb0d8;
+    border: 2px solid #fff;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.brizy-featured-image .deleteImage {
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    z-index: 11;
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    background-color: #2d323b;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.brizy-featured-image .deleteImage svg {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    color: #efefef;
+    fill: #efefef;
+    stroke: none;
+}
+
+#brizy_dashboard .brizy-overview__feed {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#brizy_dashboard .e-brizy__feed .e-overview__post-link {
+    padding-bottom: 5px;
+}
+
+#brizy_dashboard .brizy-overview__recently-edited .brizy-overview__heading, #brizy_dashboard .brizy-overview__feed .brizy-overview__heading {
+    font-weight: 700;
+    border-bottom: 1px solid #eee;
+    margin: 0 -12px;
+    padding: 6px 12px;
+}
+
+#brizy_dashboard .brizy-overview__badge {
+    background: #39b54a;
+    color: #fff;
+    font-size: .75em;
+    padding: 3px 6px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-transform: uppercase
+}
+
+.brizy-dashboard-widget-footer {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 12px 12px 12px 0;
+    border-top: 1px solid #eee;
+}
+
+.brizy-dashboard-widget-footer__go-pro {
+    display:inline-flex;
+    fill: #0073aa;
+}
+
+.brizy-dashboard-widget-footer__go-pro:hover {
+    fill: #00a0d2;
+}
